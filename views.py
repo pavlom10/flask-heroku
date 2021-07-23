@@ -47,21 +47,21 @@ app.add_url_rule(
     view_func=AdvertisementView.as_view('advertisement_get'),
     methods=['GET', ]
 )
-app.add_url_rule(
-    '/api/v1',
-    view_func=AdvertisementView.as_view('advertisement_post'),
-    methods=['POST', ]
-)
-app.add_url_rule(
-    '/api/v1/<int:advertisement_id>',
-    view_func=AdvertisementView.as_view('advertisement_patch'),
-    methods=['PATCH', ]
-)
-app.add_url_rule(
-    '/api/v1/<int:advertisement_id>',
-    view_func=AdvertisementView.as_view('advertisement_delete'),
-    methods=['DELETE', ]
-)
+# app.add_url_rule(
+#     '/api/v1',
+#     view_func=AdvertisementView.as_view('advertisement_post'),
+#     methods=['POST', ]
+# )
+# app.add_url_rule(
+#     '/api/v1/<int:advertisement_id>',
+#     view_func=AdvertisementView.as_view('advertisement_patch'),
+#     methods=['PATCH', ]
+# )
+# app.add_url_rule(
+#     '/api/v1/<int:advertisement_id>',
+#     view_func=AdvertisementView.as_view('advertisement_delete'),
+#     methods=['DELETE', ]
+# )
 
 
 def nothing():
