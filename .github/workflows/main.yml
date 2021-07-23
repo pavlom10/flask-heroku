@@ -39,5 +39,5 @@ jobs:
           heroku_api_key: ${{secrets.HEROKU_API_KEY}}
           heroku_app_name: "net-flask"
           heroku_email: "10door@gmail.com"
-          usedocker: true,
-          dontuseforce: 1
+          usedocker: true
+          dontuseforce: false
