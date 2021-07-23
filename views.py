@@ -62,3 +62,7 @@ app.add_url_rule(
     view_func=AdvertisementView.as_view('advertisement_delete'),
     methods=['DELETE', ]
 )
+
+
+def nothing():
+    pass
