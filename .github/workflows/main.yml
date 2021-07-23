@@ -39,13 +39,4 @@ jobs:
           heroku_api_key: ${{secrets.HEROKU_API_KEY}}
           heroku_app_name: "net-flask"
           heroku_email: "10door@gmail.com"
-          justlogin: true
-
-      - name: "Login to heroku registry"
-        run: heroku container:login
-
-      - name: "Build and push to heroku registry"
-        run: heroku container:push web --app net-flask
-
-      - name: "Releases the container"
-        run: heroku container:release web --app net-flask
+          usedocker: true
